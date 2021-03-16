@@ -13,11 +13,17 @@ const config = {
     libraryTarget: "umd",
   },
 
-  resolve: { extensions: [".js", ".json"] },
+  resolve: { extensions: [".ts", ".tsx", ".js", ".json"] },
 
   module: {
     rules: [
-      { test: /\.(js)x?$/, loader: "babel-loader", exclude: /node_modules/ },
+      { test: /\.(t|j)sx?$/, loader: "ts-loader", exclude: /node_modules/ },
+      {
+        enforce: "pre",
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: "source-map-loader",
+      },
     ],
   },
 

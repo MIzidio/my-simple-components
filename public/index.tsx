@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Button from "../src";
 
-const App = () => (
+const App: React.FC<{}> = () => (
   <Button onClick={() => console.log("Está dando certo")}>
     My Simple Components
   </Button>
