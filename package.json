@@ -1,6 +1,6 @@
 {
   "name": "my-simple-components-react",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Biblioteca de componentes para estudo e uso em projetos pessoais",
   "main": "dist/index.js",
   "module": "dist/index.js",
